@@ -1,0 +1,198 @@
+/*
+  Button reset styles
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+button {
+  font-size: 1.5em;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+.lock {
+  position: fixed;
+  top: 92vh;
+}
+
+button.button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  button.button {
+    border: 2px solid currentcolor;
+  }
+}
+
+a.button,
+button.button {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  align-self: center;
+  background-color: #1b4552;
+  color: #eaeaea;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+  text-align: center;
+  line-height: 1.1;
+  -webkit-transition: 220ms all ease-in-out;
+  transition: 220ms all ease-in-out;
+}
+a.button:hover, a.button:active,
+button.button:hover,
+button.button:active {
+  background-color: #0037fe;
+}
+a.button:focus,
+button.button:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4px #0029be;
+}
+
+button.button:disabled {
+  background-color: #576080;
+}
+
+a.button-small,
+button.button-small {
+  font-size: 1.15em;
+}
+a.button-block,
+button.button-block {
+  width: 100%;
+}
+
+/* App styles */
+
+.active {
+  background-color: #183e4b;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border: 1px solid #1b4552;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  padding: 2vh;
+  margin: 0.5vh;
+  border: 1px solid #1b4552;
+  background-color: #8ba0a4;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+li:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+ol {
+  margin-top: 0.6em;
+  padding-left: 1em;
+}
+
+body {
+  color: #eaeaea;
+  background-color: #d74a49;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+
+@media only screen and (max-device-width: 375px) {
+  body {
+    font-size: 20px;
+  }
+
+  .controls {
+    height: 10vh;
+  }
+
+  .list-container {
+    overflow: auto;
+    margin:  auto;
+  }
+
+  .list-container ol {
+    margin-top: 0;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-device-width: 375px) {
+  body {
+    font-size: 20px;
+  }
+
+  .controls {
+    height: 9vh;
+  }
+
+  .list-container {
+    margin:  auto;
+  }
+
+  .list-container ol {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-device-width: 375px) and (max-device-width: 1200px){
+  body {
+    font-size: 24px;
+  }
+
+  .controls {
+    height: 9vh;
+  }
+
+  .list-container {
+    margin:  auto;
+  }
+
+  .list-container ol {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "music-repeater",
+  "version": "0.0.1",
+  "description": "simple track repeater",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "lite-server run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/forrana/ihan-valo-music.git"
+  },
+  "author": "Aliaksei Kuchyn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/forrana/ihan-valo-music/issues"
+  },
+  "homepage": "https://github.com/forrana/ihan-valo-music#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "vue": "^3.0.0"
+  }
+}
